@@ -2,7 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  <SiteCon />
+  return (
+    <main>
+      <Header />
+      <SiteCon />
+      <Footer />
+    </main>
+  )
 }
 
 export default App;
