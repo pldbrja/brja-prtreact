@@ -18,28 +18,31 @@ const projects = [
         id: 3,
         bg: "#032B43",
         name: "Text Editor App",
-        github: "",
+        github: "https://github.com/pldbrja/txt-editor",
     },
     {
         id: 4,
         bg: "#032B43",
         name: "Weather Dashboard",
-        github: "",
+        github: "https://github.com/pldbrja/weather-forecast",
     },
     {
         id: 5,
         bg: "#032B43",
         name: "Team Profile Generator",
-        github: "",
+        github: "https://github.com/pldbrja/tm-profile-gener8tor",
     },
     {
         id: 6,
         bg: "#032B43",
         name: "Work Day Scheduler",
-        github: "",
+        github: "https://github.com/pldbrja/day-2-day-planner",
     },
 ];
 
 export default function Portfolio () {
-    return <Project projects={projects}/>;
+    return (
+        <Project projects={projects}/>,
+        <p>OK!</p>
+    );
 };
