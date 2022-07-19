@@ -5,10 +5,16 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
+function renderSite() {
+
+};
+
 function SiteCon() {
     return (
-        <Header />
+        <Portfolio />
+        // {renderSite()}
+        
     );
-}
+};
 
 export default SiteCon;
