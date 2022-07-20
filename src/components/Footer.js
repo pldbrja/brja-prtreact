@@ -2,6 +2,7 @@ import React from 'react';
 
 const fStyle = {
     centering: {
+        marginTop: '10px',
         textAlign: 'center',
         letterSpacing: '10px',
     }

@@ -8,11 +8,11 @@ This is a portfolio that utilizes React to create a single-page application. The
 
 Aside from Bootstrap's prebuilt classes, this portfolio utilizes the React library Material UI for specific elements such as the error message presented on the contact form.
 
+Each page is rendered through an individual JS page that is called within the Header component that connects the Nav to the main page.
+
 ## Errors
 
-The dropdown menu for mobile is a work in progress and at the moment, the pprtfolio page does not render the projects correctly.
-
-Both of these are errors that will be fixed before the final version.
+The dropdown menu for mobile is a work in progress and at the moment, the portfolio page does not render the projects correctly. The current work-arounds for these issues were to remove the drop-down mobile links for the time being until a fix is found, and to render each project without the .map function with the data.
 
 ## Usage
 
@@ -24,6 +24,7 @@ Both of these are errors that will be fixed before the final version.
 
 * Material UI, which can be found at [mui.com/](https://mui.com/)
 * [Graphic Placeholder](https://freesvg.org/graphic-placeholder) from FreeSVG
+* [Tutorial](https://bobbyhadz.com/blog/react-on-hover-show-text) by Borislav Hadzhiev for having hover states
 
 ## Documentation
 
