@@ -1,7 +1,16 @@
 import React from 'react';
+import ContactForm from './ContactForm';
+
+const styles = {
+    Test: {
+        opacity: 0,
+    }
+}
 
 export default function Contact () {
     return (
-        <p>OK!</p>
+        <div>
+            <ContactForm />
+        </div>
     );
 };

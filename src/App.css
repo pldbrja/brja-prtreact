@@ -9,3 +9,28 @@
   height: 40em;
   width: 45em;
 }
+
+.error-message {
+  opacity: 0;
+  animation: rush .6s forwards;
+  color: white;
+  background: rgb(126, 40, 40);
+  width: fit-content;
+  padding: 0 2px 0 2px;
+}
+
+.container-custom {
+  margin: 1em;
+}
+
+@keyframes rush {
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
