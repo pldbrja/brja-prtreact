@@ -26,3 +26,6 @@ Both of these are errors that will be fixed before the final version.
 * [Graphic Placeholder](https://freesvg.org/graphic-placeholder) from FreeSVG
 
 ## Documentation
+
+![Screenshot of the portfolio site's About page](./images/portfolioss.png)
+![Screenshot of the mobile portfolio page](./images/portfoliossmobile.png)
