@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TextField from '@mui/material/TextField'
+import Alert from '@mui/material/Alert'
 
 import validation from '../../utils/helper';
 
@@ -35,7 +35,7 @@ export default function Form() {
             return;
         }
         if(!inquiry) {
-            setError('This field cannot be empty.');
+            setError('Please enter a message.');
             return;
         }
 
@@ -47,33 +47,42 @@ export default function Form() {
     return (
         <div>
             <form>
-                <TextField
-                id="outlined-basic"
-                value={nickName}
-                name="nickName"
-                onChange={handleInput}
-                type="nickName"
-                placeholder="Name"/>
-                <input 
-                className="form-control"
-                value={email}
-                name="email"
-                onChange={handleInput}
-                type="email"
-                placeholder="Email"/>
-                <textarea
-                className="form-control"
-                value={inquiry}
-                name="inquiry"
-                onChange={handleInput}
-                type="inquiry"
-                placeholder="Enter your message"/>
+                <div className="mb-3">
+                    <label for="nickName" className="form-label">Name</label>
+                    <input 
+                    className="form-control"
+                    value={nickName}
+                    name="nickName"
+                    onChange={handleInput}
+                    type="nickName"
+                    placeholder="Name"/>
+                </div>
+                <div className="mb-3">
+                    <label for="email" className="form-label">Email</label>
+                    <input 
+                    className="form-control"
+                    value={email}
+                    name="email"
+                    onChange={handleInput}
+                    type="email"
+                    placeholder="Email"/>
+                </div>
+                <div className="mb-3">
+                    <label for="inquiry" className="form-label">Message</label>
+                    <textarea
+                    className="form-control"
+                    value={inquiry}
+                    name="inquiry"
+                    onChange={handleInput}
+                    type="inquiry"
+                    placeholder="Enter your message"/>
+                </div>
 
                 <button className="btn" type="button" onClick={handleFormSubmit}>Send Your Inquiry</button>
             </form>
             {error && (
                 <div>
-                    <p className="error-message">! {error}</p>
+                    <Alert variant="filled" className="error-message" severity="error">{error}</Alert>
                 </div>
             )}
         </div>

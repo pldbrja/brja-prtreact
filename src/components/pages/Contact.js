@@ -9,7 +9,8 @@ const styles = {
 
 export default function Contact () {
     return (
-        <div>
+        <div className="render container-xxl">
+            <h2>Contact Me</h2>
             <ContactForm />
         </div>
     );

@@ -8,8 +8,12 @@ import Resume from './pages/Resume';
 const hStyles = {
     header: {
         padding: '0 10px 0 10px',
-        background: "#3F88C5",
+        background: 'linear-gradient(180deg, rgba(19,111,99,1) 57%, rgba(3,43,67,1) 58%, rgba(19,111,99,1) 59%, rgba(19,111,99,1) 62%, rgba(3,43,67,1) 63%)',
         margin: 0,
+        boxShadow: 'inset #D00000 0 6px 0, inset #D00000 0 -2px 0'
+    },
+    heading: {
+        padding: '0 10px 0 10px',
     }
 }
 
@@ -35,19 +39,15 @@ function Header() {
     return (
         <div>
             <div style={hStyles.header} className="navbar navbar-expand-lg">
-                <header class="container-fluid">
-                    <div>
-                        <h1>Mia Borja</h1>
+                <header className="container-fluid">
+                    <div style={hStyles.heading}>
+                        <h1 className="display-2">Mia Borja</h1>
                     </div>
-
-                    <div>
-                            <Nav currentPage={currentPage} changePage={changePage} />
-                        </div>
+                    
+                    <Nav currentPage={currentPage} changePage={changePage} />
                 </header>
             </div>
-            <div className="container-xxl">
                 {renderSite()}
-            </div>
         </div>
     );
 };

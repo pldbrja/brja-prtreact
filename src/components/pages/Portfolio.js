@@ -42,7 +42,10 @@ const projects = [
 
 export default function Portfolio () {
     return (
-        <Project projects={projects}/>,
-        <p>OK!</p>
+        <div className="render container-xxl">
+            <h2>Portfolio</h2>
+            <Project projects={projects}/>,
+            <p>Broken, sorry.</p>
+        </div>
     );
 };

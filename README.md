@@ -6,7 +6,13 @@ This is a portfolio that utilizes React to create a single-page application. The
 
 ## Components
 
-Aside from Bootstrap's prebuilt classes, this portfolio utilizes the React library Material UI for specific elements .
+Aside from Bootstrap's prebuilt classes, this portfolio utilizes the React library Material UI for specific elements such as the error message presented on the contact form.
+
+## Errors
+
+The dropdown menu for mobile is a work in progress and at the moment, the pprtfolio page does not render the projects correctly.
+
+Both of these are errors that will be fixed before the final version.
 
 ## Usage
 
@@ -18,6 +24,5 @@ Aside from Bootstrap's prebuilt classes, this portfolio utilizes the React libra
 
 * Material UI, which can be found at [mui.com/](https://mui.com/)
 * [Graphic Placeholder](https://freesvg.org/graphic-placeholder) from FreeSVG
-* [Anime.js](https://animejs.com/), used for the skills on the resume page.
 
 ## Documentation

@@ -5,7 +5,7 @@ import Footer from './Footer';
 
 function SiteCon() {
     return (
-        <div>
+        <div className="bg">
             <Header />
 
             <Footer />
