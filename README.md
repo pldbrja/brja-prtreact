@@ -2,6 +2,8 @@
 
 ## Description
 
+[Site Link](https://pldbrja.github.io/brja-prtreact/)
+
 This is a portfolio that utilizes React to create a single-page application. The application relies on conditional rendering to detect status and state of the current page in order to render each individual component.
 
 ## Components
